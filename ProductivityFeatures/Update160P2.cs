@@ -6,22 +6,6 @@ namespace ProductivityFeatures
 {
     class Update160P2
     {
-        // First thing you may notice are new colors according to Roslyn classification.
-        // These colors are similar to the very popular Visual Studio Code colors.
-        // You can opt in/out of these new colors in Tools > Options > Environment > Preview Features 
-        // with the checkbox "Use enhanced colors for C#".
-        // As always, any feedback is appreciated!
-        public void NewColors(Update160P2 parameterNewColor)
-        {
-            var localVariableNewColor = 100;
-
-            // for keyword has new color
-            for (int i = 0; i < 10; i++)
-            {
-                localVariableNewColor--;
-                parameterNewColor--; // Overloaded operators get slightly different coloring too!
-            }
-        }
         public static Update160P2 operator --(Update160P2 x)
         {
             return x;
